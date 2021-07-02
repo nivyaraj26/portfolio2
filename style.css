@@ -44,7 +44,7 @@
   margin-left: 500px;
 }
   
-.text-center{
+.text-center1{
   font-family: cursive;
   font-size: 35px;
   color: antiquewhite;
@@ -84,7 +84,7 @@
 .quote{
     font-family: sans-serif;
 }
-
+    
                             /* END OF ABOUT ME SECTION */
 
                             /* SKILLS SECTION */
@@ -93,19 +93,35 @@
     background-color: #ebcccc;
     background-size: cover;
 }
-                              
-.Projects{
-    background-image: url(assets/images/nm.jpg);
-}
+                             
+                            /* END OF SKILLS SECTION */
+
+                            /* PROJECTS SECTION */
 .fs-2{
     text-align: center;
-    color: darkred;
+    color: rgb(250, 246, 246);
     font-family: 'Times New Roman', Times, serif;
 }
-.carousel-item{
-    align-items: center;
+.card-body1{
+    background-color: rgb(12, 12, 12);
+}
+.card-text1{
+    color: cornsilk;
+}
+.card-title1{
+    color: #fff;
 }
 
-.ContactMe{
-    background-image: url(assets/images/contact.jpg);
+
+                            /* END OF PROJECTS SECTION */
+
+                            /*CONTACT SECTION */
+
+.container2{
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+                            /*END OF CONTACT SECTION*/
