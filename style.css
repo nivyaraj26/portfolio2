@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,800&family=Ubuntu:ital,wght@1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav{
+  margin: 0px auto;
+  padding: 6px 0px;
+  background-color: #ebcccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item{
+    font-size: 17px;
+    
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+                                     /* Home Section */
+.container{
+    width: 100%;
+    width: 100%;
+    min-height: 500px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  width: 50%;
+  text-align: left;
+  padding-right: 20%;
+  margin-top: -500px;
+  margin-left: 500px;
+}
+  
+.text-center{
+  font-family: cursive;
+  font-size: 35px;
+  color: antiquewhite;
+  padding-right: 20%;
+  margin-left: -170px;
+}
+.text-end{
+    color: #fff;
+    margin-left: 130px;
+    font-weight: 40px;
+}
+.name{
+  padding: 20px;
+  padding-right: 19%;
+}
+.text-end span {
+  color: #f1a6b9;
+  font-family: cursive;
+}
+#text-center{
+    color: darkmagenta;
+    text-align: center;
+}
+
+                              /* END OF HOME SECTION*/
+
+                             /* ABOUT ME SECTION */
+.card-body{
+    background-color: #d893a9;
+ }
+.card-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-text{
+    font-family: sans-serif;
+}
+.quote{
+    font-family: sans-serif;
+}
+
+                            /* END OF ABOUT ME SECTION */
+
+                            /* SKILLS SECTION */
+
+.Skills{
+    background-color: #ebcccc;
+    background-size: cover;
+}
+                              
+.Projects{
+    background-image: url(assets/images/nm.jpg);
+}
+.fs-2{
+    text-align: center;
+    color: darkred;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carousel-item{
+    align-items: center;
+}
+
+.ContactMe{
+    background-image: url(assets/images/contact.jpg);
+}
