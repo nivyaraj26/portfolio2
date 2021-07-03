@@ -1,183 +1,351 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="new-style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio</title>
   </head>
-  <body>
-
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="0"
+    class="scrollspy-example"
+    tabindex="0"
+  >
     <!--nav-->
-    <nav>
-        <ul class="nav nav-pills justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About Me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact Me">Contact Me</a>
-          </li>
-        </ul>
+    <nav
+      id="navbar"
+      class="navbar fixed-top navbar-expand-lg navbar-dark light"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- close nav-->
 
-
     <!--Home-->
 
-    <section class="home" style="height: 100vh; background-color: black;">
-      <div class="container text center my-5">
-      <img src="assets/images/bag.jpg" width="100%">
-        <div class="details">
-            <div class="name">
-                <p id="text-center1">Hi,<br>I'm Nivya Raj<br></p>
-                <p class="text-end fs-3"><br>"Everything is <span> DESIGNED..."</span></p>
-            </div>
+    <section id="home">
+      <div class="container">
+        <div
+          class="
+            row
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
+          style="height: 600px"
+        >
+          <div class="col-12 mt-0">
+            <h1 class="name fw-bolder text-light">
+              Hi, <br />
+              <span style="color: #eeb2b2"> I'm Nivya Raj</span>
+            </h1>
+          </div>
+          <div class="col-12 mt-5">
+            <h1
+              class="d-flex mt-5 pt-5 justify-content-end fw-bolder text-light"
+            >
+              <q
+                >Everything is
+                <span style="color: #eeb2b2">DESIGNED...</span></q
+              >
+            </h1>
+          </div>
         </div>
       </div>
     </section>
     <!--Close Home-->
-    
 
     <!--About Me-->
 
-<section class="About Me" id="About Me" style="height: 100vh; background-color: black;">
-      <div class="card mb-4" style="width:100%;">
-        <div class="row g-2">
-          <div class="col-md-2">
-            <img src="assets/images/niv.jpg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body">
-              <h5 class="card-title"><b>About Me</b></h5>
-              <p class="card-text">I am pursuing Btech in Computer Science from Amal Jyothi College of Engineering Kanjirappally.
-                I am from Kozhikode district.Completed my higher secondary education from Sacred Heart Higher Secondary School.I love to travel and explore the world.My ambition is to become a Software Developer .Setting goals gives me a motivation .It also gives me confidence.I have fixed many goals for myself,some of them I have accomplished but many of them I am still working on.<br>My mother has always taught me about the importance of family and its value.What a person needs most is humanity.My ultimate goal is to be a <b><em>good human being</em></b></p>
-                <p class="quote"><strong>Never doubt what you can do because you can do anything you set your mind to..</strong>I truly believe
-                  in this quote.I am a very passionate person about what I am doing.I always looking to find happiness in my work.</p>
+    <section class="about-me p-5" id="about">
+      <div class="container">
+        <h1 class="text-uppercase text-center p-3 text-light">About Me</h1>
+        <div class="card my-4 p-3" style="width: 100%">
+          <div class="row g-2">
+            <div class="col-md-2">
+              <img
+                src="assets/images/niv.jpg"
+                class="img-fluid rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title"><b>Hi, I'm Nivya Raj</b></h5>
+                <p class="card-text">
+                  I am pursuing Btech in Computer Science from Amal Jyothi
+                  College of Engineering Kanjirappally. I am from Kozhikode
+                  district.Completed my higher secondary education from Sacred
+                  Heart Higher Secondary School.I love to travel and explore the
+                  world.My ambition is to become a Software Developer .Setting
+                  goals gives me a motivation .It also gives me confidence.I
+                  have fixed many goals for myself,some of them I have
+                  accomplished but many of them I am still working on.<br />My
+                  mother has always taught me about the importance of family and
+                  its value.What a person needs most is humanity.My ultimate
+                  goal is to be a
+                  <b><em>good human being.</em></b>
+                </p>
+                <p class="quote">
+                  <strong
+                    >Never doubt what you can do because you can do anything you
+                    set your mind to..</strong
+                  >I truly believe in this quote.I am a very passionate person
+                  about what I am doing.I always looking to find happiness in my
+                  work.
+                </p>
               </div>
+            </div>
           </div>
         </div>
-      </div><br><br>
-      <div class="mb-3">
-      <p id="text-center" style="color: bisque; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">KNOW MORE ABOUT ME</p>
-      <div class="d-grid gap-2 col-3 mx-auto">
-        <button class="btn btn-primary bg-secondary" type="button">RESUME</button><br><br><br>
+        <br /><br />
+        <div class="mb-3">
+          <p class="text-center text-light">KNOW MORE ABOUT ME</p>
+          <div class="d-grid gap-2 col-3 mx-auto">
+            <button class="btn btn-primary bg-secondary" type="button">
+              RESUME</button
+            ><br /><br /><br />
+          </div>
+        </div>
       </div>
     </section>
-    
+
     <!--Close About Me-->
 
     <!--Skills-->
-    <section class="Skills" id="Skills" style="height: 100vh;background-color: black;">
-      <p class="fs-2">SKILLS</p><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="0" aria-valuemax="100">HTML</div>
-        </div><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar bg-success " role="progressbar" style="width: 90%;" aria-valuemin="0" aria-valuemax="100">CSS</div>
-        </div><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuemin="0" aria-valuemax="100">PYTHON</div>
-        </div><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar bg-danger " role="progressbar" style="width: 85%;" aria-valuemin="0" aria-valuemax="100">C</div>
-        </div><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuemin="90" aria-valuemax="100">BOOTSTRAP</div>
-        </div><br>
-        <div class="progress" style="height:25px;">
-          <div class="progress-bar bg-success " role="progressbar" style="width: 70%;" aria-valuemin="0" aria-valuemax="100">SQL</div>
-        </div>
-    </section><br><br><br>
-
-    <!--Close Skills-->
-    
-    <!--Projects-->
-
-    <section class="Projects" id="Projects" style="height: 100vh; background-color: black;">
-      <p class="fs-2">PROJECTS</p><br>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card p-3">
-            <div class="card-body1 pt-4"  style="height:250px;">
-              <h5 class="card-title1 text-center">Hotel Management System</h5><br>
-              <p class="card-text1 text-warning">Hotel Management System It permits user to book rooms and vacate the rooms.Once the room is allocated
-                the user gets the facility to order food and also can ask for cleaning the rooms</p>
+    <section class="Skills p-5" id="Skills">
+      <div class="container">
+        <h1 class="text-center p-3">SKILLS</h1>
+        <div class="mt-5 pt-5">
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar fw-bold"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              HTML
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body1" style="height:250px;" >
-              <h5 class="card-title1 text-center">Event++</h5><br>
-              <p class="card-text1"> A Saas project which helps to execute an event completely.Event Management Companies pay for the
-                Software on a subscription basis, according to the needs of company.The system provides on-screen</p>
-
+          <br />
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar bg-success fw-bold"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              CSS
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body1" style="height:250px;">
-              <h5 class="card-title1 text-center">Class Monitoring Sytems</h5>
-              <p class="card-text1">It helps to check whether the school is performing in its best way ,through monitoring students .Tracking the moods of children in each class and recording it.It can only access by the invigilator.And there is another system to track the invigilator ,who rectify the performance of the schools. Resources- It is based on Machine Learning</p></p>
+          <br />
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar bg-warning fw-bold"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              PYTHON
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar bg-danger fw-bold"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              C
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar fw-bold"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuemin="90"
+              aria-valuemax="100"
+            >
+              BOOTSTRAP
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 25px">
+            <div
+              class="progress-bar bg-success fw-bold"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              SQL
             </div>
           </div>
         </div>
       </div>
-      
     </section>
+    <!--Close Skills-->
 
+    <!--Projects-->
+
+    <section class="Projects p-5" id="Projects">
+      <div class="container">
+        <h1 class="text-uppercase text-center p-3 text-light">Projects</h1>
+        <div class="row mt-5">
+          <div class="col-sm-4 mb-2">
+            <div class="card p-3 h-100">
+              <h5 class="card-title text-center fw-bold">
+                Hotel Management System
+              </h5>
+              <div class="card-body pt-4 text-center">
+                <p class="card-text">
+                  Hotel Management System It permits user to book rooms and
+                  vacate the rooms.Once the room is allocated the user gets the
+                  facility to order food and also can ask for cleaning the rooms
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-2">
+            <div class="card p-3 h-100">
+              <h5 class="card-title text-center fw-bold">Event++</h5>
+              <div class="card-body text-center">
+                <p class="card-text">
+                  A Saas project which helps to execute an event
+                  completely.Event Management Companies pay for the Software on
+                  a subscription basis, according to the needs of company.The
+                  system provides on-screen
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-2">
+            <div class="card p-3 h-100">
+              <h5 class="card-title text-center fw-bold">
+                Class Monitoring Sytems
+              </h5>
+              <div class="card-body text-center">
+                <p class="card-text">
+                  It helps to check whether the school is performing in its best
+                  way ,through monitoring students .Tracking the moods of
+                  children in each class and recording it.It can only access by
+                  the invigilator.And there is another system to track the
+                  invigilator ,who rectify the performance of the schools.
+                  Resources- It is based on Machine Learning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Close Projects-->
 
     <!--Contact-->
 
-    <section id="Contact Me" class="Contact Me" style="height: 100vh; background-color: rgb(64, 188, 207);">
-      <div class="container3">
+    <section id="contact" class="contact-me p-5">
+      <div class="container">
+        <h1 class="text-uppercase text-center p-3 text-dark">Contact Info</h1>
         <div class="row">
-          <div class="col-md-12">
-            <h4 class="text-uppercase container2 text-dark">Contact Info</h4><br>
+          <div class="col col-md-8 mx-auto">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  placeholder="Enter the message"
+                  id="floatingTextarea"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
-        <div class="mb-3">
-        <label for="exampleFormControlInput1 mx-auto" class="form-label d-flex justify-content-center text-dark">Email address</label>
-        <input type="email" class="form-control mx-auto" style="width: 400px;"id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label d-flex justify-content-center text-light text-dark">Message</label>
-        <textarea class="form-control mx-auto" style="width: 600px;"  id="exampleFormControlTextarea1" rows="4"></textarea><br>
-        <a type="button" style="width: 70px;" class="btn btn-primary btn-sm d-flex justify-content-center text-light">Send</a>
-      </div>
-
     </section>
-        
-
-    </body>
-
-
-    </html>
-    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
-
